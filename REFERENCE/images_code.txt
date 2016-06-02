@@ -1,0 +1,106 @@
+Rounded Corners
+
+The .img-rounded class adds rounded corners to an image (IE8 does not support rounded corners):
+
+
+Example
+
+<img src="cinqueterre.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236">
+Try it Yourself » 
+
+Circle
+
+The .img-circle class shapes the image to a circle (IE8 does not support rounded corners):
+
+
+Example
+
+<img src="cinqueterre.jpg" class="img-circle" alt="Cinque Terre" width="304" height="236">
+Try it Yourself » 
+
+Thumbnail
+
+The .img-thumbnail class shapes the image to a thumbnail:
+
+
+Example
+
+<img src="cinqueterre.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236">
+Try it Yourself » 
+
+Responsive Images
+
+Images comes in all sizes. So do screens. Responsive images automatically adjust to fit the size of the screen. 
+
+Create responsive images by adding an .img-responsive class to the <img> tag. The image will then scale nicely to the parent element.
+
+The .img-responsive class applies display: block; and max-width: 100%; and height: auto; to the image:
+
+
+Example
+
+<img class="img-responsive" src="img_chania.jpg" alt="Chania"> 
+Try it Yourself » 
+
+Image Gallery
+
+You can also use Bootstrap's grid system in conjunction with the .thumbnail class to create an image gallery:
+
+
+Example
+
+ <div class="row">
+  <div class="col-md-4">
+    <a href="pulpitrock.jpg" class="thumbnail">
+      <p>Pulpit Rock: A famous tourist attraction in Forsand, Ryfylke, Norway.</p> 
+      <img src="pulpitrock.jpg" alt="Pulpit Rock" style="width:150px;height:150px">
+    </a>
+  </div>
+  <div class="col-md-4">
+    <a href="moustiers-sainte-marie.jpg" class="thumbnail">
+      <p>Moustiers-Sainte-Marie: Considered as one of the "most beautiful villages of France".</p>
+      <img src="moustiers-sainte-marie.jpg" alt="Moustiers Sainte Marie" style="width:150px;height:150px">
+    </a>
+  </div>
+  <div class="col-md-4">
+    <a href="cinqueterre.jpg" class="thumbnail">
+      <p>The Cinque Terre: A rugged portion of coast in the Liguria region of Italy.</p> 
+      <img src="cinqueterre.jpg" alt="Cinque Terre" style="width:150px;height:150px">
+    </a>
+  </div>
+</div>
+Try it Yourself » 
+
+Responsive Embeds
+
+Also let videos or slideshows scale properly on any device.
+
+Classes can be applied directly to <iframe>, <embed>, <video>, and <object> elements.
+
+The following example creates a responsive video by adding an .embed-responsive-item class to an <iframe> tag (the video will then scale nicely to the parent element). The containing <div> defines the aspect ratio of the video:
+
+
+Example
+
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="..."></iframe>
+</div>
+Try it Yourself » 
+
+Note
+What is aspect ratio? 
+
+The aspect ratio of an image describes the proportional relationship between its width and its height. Two common video aspect ratios are 4:3 (the universal video format of the 20th century), and 16:9 (universal for HD television and European digital television). 
+
+You can choose between two aspect ratio classes:
+
+
+<!-- 16:9 aspect ratio -->
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="..."></iframe>
+</div>
+
+<!-- 4:3 aspect ratio -->
+<div class="embed-responsive embed-responsive-4by3">
+  <iframe class="embed-responsive-item" src="..."></iframe>
+</div>
