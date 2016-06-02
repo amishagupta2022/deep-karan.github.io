@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>User_Homepage</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -16,14 +16,51 @@
       <script src="js/html5shiv.min.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
+    <style type="text/css">
+    
+            #main {
+    width: 1120px;
+    height: 120px;
+    border: 10px solid #c3c3c3;
+    display: flex;
+}
+
+#main div:nth-of-type(1) {flex-grow: 1;}
+#main div:nth-of-type(2) {flex-grow: 1;}
+#main div:nth-of-type(3) {flex-grow: 1;}
+
+#myBlueDiv {
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+    text-align: center;
+    padding-bottom: 14px;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {flex-grow: 8;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {flex-grow: 8;}
+}
+
+
+    </style>
    </head>
   <body>  
       <div class="jumbotron">
-        <div class="container">
-          <h2>Creating Forms</h2>
+      <div class="container">
+        <div id="main" align="center">
+              <div style="background-color:green;"></div>
+              <div style="background-color:lightblue; " id="myBlueDiv"><h1>Unclejoy.in</h1></div>
+              <div style="background-color:green;"></div>
+            </div>
         </div>
-      </div>
-		
+        </div>
+        
+		<!--
       <div class="container">
         <form action="">
           <div class="form-group has-warning has-feedback">
@@ -80,6 +117,80 @@
 
         </form>
         <hr>
+        -->
+       <div class="container">
+       <div class="xc">
+        <h1 align="center">User Sign-up</h1>
+        <br>
+        <br>
+        <form action="" >
+        
+        <div class="row">
+           <div class="col-lg-3"></div>
+              <div class="form-group  col-lg-6">
+                <label for="element-4" class="sr-only">Enter your name</label>
+                <input type="name" id="element-4" class="form-control input-lg" placeholder="Enter your name" required=""></input>
+              </div>
+            <div class="col-lg-3"></div>
+        </div>
+          <br>
+        <div class="row">
+           <div class="col-lg-3"></div>
+              <div class="form-group  col-lg-6">
+                <label for="element-4" class="sr-only">Enter your name</label>
+                <input type="email" id="element-4" class="form-control input-lg" placeholder="Enter your email" required=""></input>
+              </div>
+            <div class="col-lg-3"></div>
+        </div>
+          
+          <br>
+
+        <div class="row">
+          <div class="col-lg-3"></div>
+            <div class="form-group  col-lg-6">  
+              <label for="element-7" class="sr-only">Enter your password</label>
+              <input type="password" id="element-7" class="form-control input-lg" placeholder="Enter your password" required=""></input>
+              <p class="help-block">#Must be greater than 8 characters</p>
+            </div>
+
+          <div class="col-lg-3"></div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3"></div>
+              <div class="form-group  col-lg-6">  
+                <label for="element-7" class="sr-only">Confirm  your password</label>
+                <input type="password" id="element-7" class="form-control input-lg" placeholder="Confirm your password" required=""></input>
+              </div>
+          <div class="col-lg-3"></div>
+        </div>
+        
+        <br>
+
+        <div class="row">
+          <div class="col-lg-3"></div>
+              <div class="form-group  col-lg-6">  
+                <label for="element-7" class="sr-only"></label>
+                <input type="text" id="element-7" class="form-control input-lg" placeholder="Enter your Phone-Number" required=""></input>
+              </div>
+          <div class="col-lg-3"></div>
+        </div>
+        
+
+        <div class="row">
+           <div class="col-lg-5"></div>        
+          <a href="" class=" col-lg-2 btn btn-info btn-lg ">Sign-Up</a>
+           <div class="col-lg-5"></div>
+        </div>
+        </form>
+        </div>
+        </div>
+        <br>
+        
+        <hr>
+          
+       </div> 
         <footer>
           
         </footer>

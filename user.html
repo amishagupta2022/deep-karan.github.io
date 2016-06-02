@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>User_Homepage</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+    
+            #main {
+    width: 1120px;
+    height: 100px;
+    border: 1px solid #c3c3c3;
+    display: flex;
+}
+
+#main div:nth-of-type(1) {flex-grow: 1;}
+#main div:nth-of-type(2) {flex-grow: 1;}
+#main div:nth-of-type(3) {flex-grow: 1;}
+
+#myBlueDiv {
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {flex-grow: 8;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {flex-grow: 8;}
+}
+
+
+    </style>
+   </head>
+  <body>  
+      <div class="jumbotron">
+      <div class="container">
+        <div id="main" align="center">
+              <div style="background-color:coral;"></div>
+              <div style="background-color:lightblue;" id="myBlueDiv"><h1>Unclejoy.in</h1></div>
+              <div style="background-color:khaki;"></div>
+            </div>
+        </div>
+        </div>
+        
+		<!--
+      <div class="container">
+        <form action="">
+          <div class="form-group has-warning has-feedback">
+            <label for="element-1" class="control-label">Enter your name</label>
+            <input type="text" id="element-1" class="form-control"></input>
+            <span class="glyphicon glyphicon-ok form-control-feedback "></span>
+          </div>
+          <div class="form-group has-error has-feedback">  
+            <label for="element-2" class="control-label">Enter your age</label>
+            <input type="text" id="element-2" class="form-control"></input>
+            <span class="glyphicon glyphicon-remove form-control-feedback "></span>
+          </div>
+          <div class="form-group has-success has-feedback">  
+            <label for="element-3" class="control-label">Enter your password</label>
+            <input type="password" id="element-3" class="form-control"></input>
+            <p class="help-block">Must Include a Capital Letter</p>
+            <span class="glyphicon glyphicon-home "></span>
+            <span class="glyphicon glyphicon-warning-sign form-control-feedback "></span>
+          </div>
+          <div>
+            <a href="" class="btn btn-info btn-lg">Sign In</a>
+            <a href="" class="btn btn-info btn-lg glyphicon glyphicon-home"></a>
+          </div>
+        </form>
+          <hr>
+        <form action="" class="form-inline">
+          <div class="form-group">
+            <label for="element-4" >Enter your name</label>
+            <input type="text" id="element-4" class="form-control "></input>
+          </div>
+          <div class="form-group">  
+            <label for="element-6" >Enter your age</label>
+            <input type="text" id="element-6" class="form-control "></input>
+          </div>
+          <div class="form-group">  
+            <label for="element-7" >Enter your password</label>
+            <input type="password" id="element-7" class="form-control"></input>
+          </div>
+        </form>
+        <hr>
+        <form action="" class="form-inline">
+          <div class="form-group">
+            <label for="element-4" class="sr-only">Enter your name</label>
+            <input type="text" id="element-4" class="form-control input-lg" placeholder="Enter your name"></input>
+          </div>
+          <div class="form-group">  
+            <label for="element-6" class="sr-only">Enter your age</label>
+            <input type="text" id="element-6" class="form-control input-md" placeholder="Enter your age" ></input>
+          </div>
+          <div class="form-group">  
+            <label for="element-7" class="sr-only">Enter your password</label>
+            <input type="password" id="element-7" class="form-control input-sm" placeholder="Enter your password"></input>
+          </div>
+
+        </form>
+        <hr>
+        -->
+       <div class="container">
+       <div class="xc">
+        <h1 align="center">User Login</h1>
+        <br>
+        <br>
+        <form action="" >
+        <div class="row">
+          
+          <div class="col-lg-3"></div>
+
+          <div class="form-group  col-lg-6">
+            <label for="element-4" class="sr-only">Enter your email</label>
+            <input type="email" id="element-4" class="form-control input-lg" placeholder="Enter your email" required=""></input>
+          </div>
+
+          <div class="col-lg-3"></div>
+        </div>
+          
+          <br>
+
+        <div class="row">
+          <div class="col-lg-3"></div>
+
+          <div class="form-group  col-lg-6">  
+            <label for="element-7" class="sr-only">Enter your password</label>
+            <input type="password" id="element-7" class="form-control input-lg" placeholder="Enter your password" required=""></input>
+            <p class="help-block">#Must be greater than 8 characters</p>
+          </div>
+
+          <div class="col-lg-3"></div>
+
+        </div>
+        <div class="row">
+           <div class="col-lg-5"></div>        
+          <a href="" class=" col-lg-2 btn btn-info btn-lg ">Login</a>
+           <div class="col-lg-5"></div>
+        </div>
+        </form>
+        </div>
+        </div>
+        <br>
+        <div class="row">
+           <div class="col-lg-5"></div>        
+          <div class="col-lg-2"><pre>Not a user..?/<a href="" style="font: oblique; color: blue ">SignUp</a></pre></div>
+           <div class="col-lg-5"></div>
+        </div>
+
+        <hr>
+          
+       </div> 
+        <footer>
+          
+        </footer>
+      </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
