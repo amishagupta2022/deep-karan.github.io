@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Unclejoy - India's first online material store marketplace </title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,700,600' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter=new google.maps.LatLng(28.620914, 77.136525);
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:15,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+
+var infowindow = new google.maps.InfoWindow({
+  content:"Unclejoy"
+  });
+
+google.maps.event.addListener(marker, 'click', function() {
+  infowindow.open(map,marker);
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+</head>
+<body>
+	<nav class="navbar navbar-default" style="min-height:90px;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <img width="70" height="70" alt="Brand" src="logo.png">
+      </a>
+      </div>
+       <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">How it Works ?</a></li>
+        <li><a href="#">Our store Listings</a></li>		
+        <li><a href="#">Be a store partner</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Store Login</a></li>
+      </ul>
+    </div>
+  </div>
+
+</nav>
+<div class="well">
+  <h1 align="center">..Reach us here..</h1>
+</div>
+   <div  style="min-height: 300px;" id="googleMap"></div>
+<br>
+<div class="container">
+<div>
+  <h2 align="center">Contact Us</h2>
+</div>
+<br>
+<br>
+  <div class="row">
+      <div class="col-lg-8">
+      <form action="" class="">
+      <div class="form-group">
+        <input type="name" id="element-4" class="form-control input-lg" placeholder="Enter your name" required=""></input>
+         </div>
+      <div class="form-group">
+         <input type="email" id="element-4" class="form-control input-lg" placeholder="Enter your email" required=""></input>
+      </div>
+      <div class="form-group">
+         <input type="text" id="element-4" class="form-control input-lg" placeholder="Enter your Phone-No" required=""></input>
+      </div>
+      <div class="form-group">
+         <textarea type="text" id="element-4" class="form-control input-lg" rows=4 placeholder="Enter your message" required=""></textarea>
+      </div>
+      <div class="form-group">
+        <a href="" class=" col-lg-2 btn btn-info btn-lg ">Submit</a>
+      </div>
+      </form>
+      </div>
+
+      <div class="col-lg-4 well">
+      <h3 align="center">Address</h3>
+       <p align="center"> CB-153/9, First Floor, Naraina Vihar Ring Road.</p>
+      </div>
+      
+  </div>
+
+    <br>
+    
+</div>
+<br>
+<footer>
+  <div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <ul>      
+     <li><a href="">Why Unclejoy?</a></li>
+     <li><a href="">Get your store listed.</a></li>
+     <li><a href="">How it works ?</a></li>
+     </ul>
+    </div>
+    <div class="col-md-3">
+    <ul type="none;">      
+     <li><a href="">Terms and Conditions</a></li>
+     <li><a href="">Privacy Policy</a></li>
+     <li><a href="">FAQs</a></li>
+    </ul>
+
+    </div>
+    <div class="col-md-3">
+      <ul>
+        <li><a href="">Contact Us</a></li>
+        <li><a href="">Team</a></li>
+        <li><a href="">Blog</a></li>
+      </ul>
+       
+      
+     </div>  
+    <div class="col-md-3">
+      <ul>      
+     <li><p style="color:#fff;">About the company</p></li>
+     <li><p>UNCLEJOY is an online web platform for booking local hardware, electricals, paint and wood & timber material store.</p></li></ul>
+     
+     
+    </div>
+    </div>
+  
+  </div>
+ <div class="row" id="row2">
+   <div class="col-md-12">
+    <ul style="text-align:center">
+    <li><a href=""><i class="fa fa-facebook"></i></a></li>
+    <li><a href=""><i class="fa fa-twitter"></i></a></li>
+    <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+    </ul>
+    </div>
+    <p>2015-16 &copy; Unclejoy Technology Private Limited - All rights reserved</p>
+  </div>  
+
+</footer>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6
+A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</body>
+</html>

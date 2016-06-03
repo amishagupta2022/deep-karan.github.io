@@ -16,45 +16,11 @@
       <script src="js/html5shiv.min.js"></script>
       <script src="js/respond.min.js"></script>
     <![endif]-->
-    <style type="text/css">
-    
-            #main {
-    width: 1120px;
-    height: 100px;
-    border: 1px solid #c3c3c3;
-    display: flex;
-}
-
-#main div:nth-of-type(1) {flex-grow: 1;}
-#main div:nth-of-type(2) {flex-grow: 1;}
-#main div:nth-of-type(3) {flex-grow: 1;}
-
-#myBlueDiv {
-    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
-    animation: mymove 5s infinite;
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes mymove {
-    50% {flex-grow: 8;}
-}
-
-/* Standard syntax */
-@keyframes mymove {
-    50% {flex-grow: 8;}
-}
-
-
-    </style>
    </head>
   <body>  
       <div class="jumbotron">
       <div class="container">
-        <div id="main" align="center">
-              <div style="background-color:coral;"></div>
-              <div style="background-color:lightblue;" id="myBlueDiv"><h1>Unclejoy.in</h1></div>
-              <div style="background-color:khaki;"></div>
-            </div>
+          <h1 align="center">Unclejoy.in</h1>
         </div>
         </div>
         
@@ -142,12 +108,18 @@
           <div class="form-group  col-lg-6">  
             <label for="element-7" class="sr-only">Enter your password</label>
             <input type="password" id="element-7" class="form-control input-lg" placeholder="Enter your password" required=""></input>
-            <p class="help-block">#Must be greater than 8 characters</p>
+            
           </div>
 
-          <div class="col-lg-3"></div>
+          <div class="col-lg-3"><p class="help-block">#Must be greater than 8 characters</p></div>
 
         </div>
+        <div class="row">
+           <div class="col-lg-5"></div>        
+          <div class="col-lg-2"><input type="checkbox" align="left"> Remember me</input></div>
+           <div class="col-lg-5"></div>
+        </div>
+        <br>
         <div class="row">
            <div class="col-lg-5"></div>        
           <a href="" class=" col-lg-2 btn btn-info btn-lg ">Login</a>
@@ -159,7 +131,10 @@
         <br>
         <div class="row">
            <div class="col-lg-5"></div>        
-          <div class="col-lg-2"><pre>Not a user..?/<a href="" style="font: oblique; color: blue ">SignUp</a></pre></div>
+          <div class="col-lg-2"><pre>Not a user..?/<a href="" style="font: oblique; color: blue ">SignUp</a></pre>
+          <a href="" style="font: oblique; color: blue; text-decoration: none; ">
+          <pre >  Forgot Password..?  </pre></a>
+          </div>
            <div class="col-lg-5"></div>
         </div>
 
